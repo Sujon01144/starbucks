@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+      
+    <title> Starbucks</title>
+        
+    <link rel="stylesheet" href="style.css"/>
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    </head>
+    
+        
+    
+    <body>
+    
+        <section>
+            
+            <div class="circle"></div>
+        
+            <header>
+            
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                
+                
+                <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+                
+                </ul>
+            
+            </header>
+            
+            <div class="content">
+            
+                <div class="textbox">
+                
+                    <h1>It's not just Coffee<br/>It's<span> Starbucks</span></h1>
+                    <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' third wave of coffee culture.[4][5] As of September 2020, the company had 32,660 stores in 83 countries, including 16,637 company operated stores and 16,023 licensed stores.[2] Of these 32,660 stores, 18,354 were in the United States</p>
+                    <a href="#">Learn More</a>
+                    
+                </div>
+                
+                <div class="img-box">
+                
+                    <img src="img/img1.png" class="starbucks"/>
+                    
+                </div>
+            
+            </div>
+            
+            <ul class="thumb">
+            
+                <li><a href="#"><img src="img/thumb1.png" onclick="imageSlider('img/img1.png'); changeCirleColor('#017143')" /></a></li>
+                
+                <li><a href="#"><img src="img/thumb2.png" onclick="imageSlider('img/img2.png'); changeCirleColor('#eb7495')"/></a></li>
+                
+                <li><a href="#"><img src="img/thumb3.png" onclick="imageSlider('img/img3.png'); changeCirleColor('#d752b1')"/></a></li>
+                
+            </ul >
+                
+            <ul class="social">
+            
+                <li><a href="https://www.facebook.com/profile.php?id=100039721518140"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/sujon156306/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/MdSujonKhondok3"><i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        
+        </section>
+        
+        
+    <script type="text/javascript">
+        
+        function imageSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        
+        function changeCirleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+    </script>
+    </body>
+
+</html>
